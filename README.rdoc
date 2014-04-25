@@ -4,7 +4,7 @@ This app will generate a golfer's handicap after they have played at least 5 rou
 
 == Heroku Staging
 
-http://secret-stream-6209.herokuapp.com/
+http://golf-handicap.herokuapp.com/
 
 == Github
 
