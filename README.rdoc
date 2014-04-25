@@ -1,3 +1,11 @@
-== README
+== README ==
 
 This app will generate a golfer's handicap after they have played at least 5 rounds.
+---
+== Heroku Staging ==
+
+http://secret-stream-6209.herokuapp.com/
+
+== Github ==
+
+https://github.com/gusk/golf-handicap
