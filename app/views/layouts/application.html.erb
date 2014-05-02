@@ -4,13 +4,23 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <title>Handicap</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<div class="logo">
+<!-- logo -->
+</div>
+<div class="nav">
+  <nav>
+    <div id="home"><%= link_to 'Home', handicap_path %> &nbsp; &nbsp;</div>
+    <div id="about"><%= link_to 'About', about_path %> &nbsp; &nbsp;</div>
+    <div id="login"><%= link_to 'Login', about_path %> </div>
+  </nav>
+</div>
+<div id="background">
+  <%= yield %>
+</div>
 </body>
 </html>

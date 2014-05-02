@@ -13,3 +13,67 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    background: url('golfmountains.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#sitename {
+    text-align: center;
+}
+
+#page-content {
+    text-align: center;
+}
+
+.about-content {
+    margin: auto;
+    width: 500px;
+    height: 100%;
+}
+
+.transbox {
+    width: 400px;
+    height: 100%;
+    margin: 30px 50px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.8;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 30px 40px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.nav {
+
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+#home {
+    display: inline-block;
+}
+
+#about {
+    display: inline-block;
+}
+
+#login {
+    display: inline-block;
+}
+
+.logo {
+    background: url('logo.png') no-repeat;
+    height: 70px;
+    position: absolute;
+    width: 200px;
+}

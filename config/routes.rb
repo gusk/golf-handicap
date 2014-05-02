@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'welcome#index'
+  root 'handicap#index'
 
   get '/handicap', to: 'handicap#index'
 
