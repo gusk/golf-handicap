@@ -15,7 +15,7 @@
  */
 
 body {
-    background: url('golfmountains.jpg') no-repeat center center fixed;
+    background: url('../images/golfmountains.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -72,7 +72,7 @@ div.transbox p {
 }
 
 .logo {
-    background: url('logo.png') no-repeat;
+    background: url('../images/logo.png') no-repeat;
     height: 70px;
     position: absolute;
     width: 200px;
