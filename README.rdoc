@@ -6,6 +6,6 @@ This app will generate a golfer's handicap after they have played at least 5 rou
 
 http://golf-handicap.herokuapp.com/
 
-== Github
+== Tracker
 
-https://github.com/gusk/golf-handicap
+https://www.pivotaltracker.com/n/projects/1072610#
