@@ -20,6 +20,8 @@ class UsersController < ApplicationController
     # password_confirmation: params[:user][:password_confirmation]
     if @user.save
       redirect_to root_path
+    else
+      render 'users/new'
     end
   end
 end

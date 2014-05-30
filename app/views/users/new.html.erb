@@ -1,6 +1,20 @@
 <div class="about-content">
   <div class="transbox">
+    <% if @user.errors.present? %>
+      <ul>
+        <div class="error">
 
+          <% if @user.errors[:password_confirmation].present? %>
+            <li><%= @user.errors[:password_confirmation].first %></li>
+          <% end %>
+          <% @user.errors.delete(:password_confirmation) %>
+          <% @user.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+
+        </div>
+      </ul>
+    <% end %>
     <p>Please register with Handicap Free</p>
 
     <div class="wrapper">
