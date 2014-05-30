@@ -1,8 +1,11 @@
 class LoginController < ApplicationController
-  def index
+  before_action :login_filter
 
-  end
-  def confirmation
-    @user = User.find params[:id]
+  private
+
+  def login_filter
+    if !current_user
+      redirect_to new_session_path
+    end
   end
 end

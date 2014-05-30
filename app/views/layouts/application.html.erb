@@ -13,26 +13,25 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 <div class="logo-container">
   <div class="logo">
     <!-- logo -->
   </div>
 </div>
 
-<!--<ul class="nav nav-pills">-->
-  <!--<li class="active"><a href="#">Home</a></li>-->
-  <!--<li><a href="#">Profile</a></li>-->
-  <!--<li><a href="#">Messages</a></li>-->
-<!--</ul>-->
 <div class="nav">
-
   <nav>
 
     <div id="home"><%= link_to 'Home', handicap_index_path %> &nbsp; &nbsp;</div>
     <div id="about"><%= link_to 'About', about_path %> &nbsp; &nbsp;</div>
-    <div id="login"><%= link_to 'Login', login_index_path %> </div>
-    &nbsp; &nbsp;
-    <div id="login"><%= link_to 'Register', new_user_path %> </div>
+      <% if current_user %>
+        <a href="/"><%= current_user.first_name %> <%= current_user.last_name %></a>&nbsp; &nbsp;
+        <%= link_to "Logout", "/sessions/#{current_user.id}", method: :delete %>
+      <% else %>
+      <div id="login"><%= link_to 'Register', new_user_path %>&nbsp; &nbsp; </div>
+      <div id="login"><%= link_to 'Login', login_index_path %> </div>
+  <% end %>
   </nav>
 </div>
 <div id="background">
