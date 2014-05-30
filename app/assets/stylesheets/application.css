@@ -42,7 +42,7 @@ body {
     margin: 30px 50px;
     background-color: #ffffff;
     border: 1px solid black;
-    opacity: 0.8;
+    opacity: 0.9;
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
@@ -76,4 +76,16 @@ div.transbox p {
     height: 70px;
     position: absolute;
     width: 200px;
+}
+
+.login-box {
+    opacity: 1;
+    font-weight: bold;
+}
+.form-font {
+    opacity: 1;
+}
+
+.logo-container {
+    padding: 20px;
 }

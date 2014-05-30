@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
 
   root 'handicap#index'
-
-  get '/handicap', to: 'handicap#index'
-
+  #
+  # get '/handicap', to: 'handicap#index'
+  #
   get '/about', to: 'handicap#about'
+
+  resources :welcome
+  resources :handicap
+  resources :users
+  resources :login
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
