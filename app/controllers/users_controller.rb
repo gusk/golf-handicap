@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+
+  layout 'user_profile'
+
+
   def index
     @users = User.all
   end
@@ -8,7 +12,7 @@ class UsersController < ApplicationController
   end
 
   def show
-
+  @user = current_user
   end
 
   def create

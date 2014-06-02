@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
 
     if user.present? && user.authenticate(params[:user][:password])
       session[:user_id] = user.id
-      redirect_to root_path
+      redirect_to user_path(current_user.id)
     else
       @user = User.new
       flash[:email_error] = 'Incorrect Email or Password'

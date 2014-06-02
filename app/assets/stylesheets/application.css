@@ -14,7 +14,7 @@
  *= require_self
  */
 
-body {
+.background {
     background: url('../images/golfmountains.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
