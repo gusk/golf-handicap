@@ -1,11 +1,11 @@
 require 'spec_helper'
 
-feature 'Golf Handicap' do
+feature 'User can fill out a scorecard' do
   before do
     User.create!(email: 'bob@example.com', first_name: 'Bob', last_name: 'Smith', password: 'password')
   end
 
-  scenario 'A user who logs in will redirect to their profile page' do
+  scenario 'user can click a link to post a score' do
     visit root_path
     click_on 'Login'
     fill_in 'user[email]', with: 'bob@example.com'
@@ -13,8 +13,10 @@ feature 'Golf Handicap' do
     within 'form' do
       click_on 'Login'
     end
+    expect(page).to have_link "Post a Score"
+  end
 
-    expect(page).to have_content 'Welcome, Bob Smith!'
-
+  scenario 'user can fill out an electronic score card' do
+   visit new_score_card_path
   end
 end

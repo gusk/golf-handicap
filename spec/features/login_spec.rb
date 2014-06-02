@@ -2,7 +2,7 @@ require 'spec_helper'
 
 feature 'User can login' do
   before do
-    User.create(email: 'bob@example.com', first_name: 'Bob', last_name: 'Smith', password: 'password')
+    User.create!(email: 'bob@example.com', first_name: 'Bob', last_name: 'Smith', password: 'password')
   end
 
   scenario 'User can login with email and password' do

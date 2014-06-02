@@ -1,1 +1,5 @@
-Welcome, <%= @user.first_name %> <%= @user.last_name %>!
+<div class="profile-container">
+  Welcome, <%= @user.first_name %> <%= @user.last_name %>!
+
+  <p><%= link_to "Post a Score", new_score_card_path, :class => "btn btn-danger" %></p>
+</div>
