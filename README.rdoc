@@ -1,3 +1,5 @@
+https://travis-ci.org/gusk/golf-handicap.svg?branch=master
+
 == README
 
 This app will generate a golfer's handicap after they have played at least 5 rounds.
